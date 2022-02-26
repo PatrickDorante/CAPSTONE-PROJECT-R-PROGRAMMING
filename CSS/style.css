@@ -1,0 +1,106 @@
+
+/* CSS style for nav bar and image*/
+:root {
+      --wit: rgb(165, 165, 165);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+}
+
+
+body {
+background: rgb(241, 241, 241);
+font-family: 'Poppins' sans-serif;
+}
+
+
+.container {
+      width: 80%;
+      margin: 0 auto;
+      
+ 
+}
+
+header {
+      background: rgb(255, 255, 255);
+    
+}
+
+header::after {
+     content: '';
+     display: table;
+     clear: both;
+}
+
+
+.dk-logo {
+      width: 15%;
+      cursor: pointer;
+      padding: 0 65px;
+} 
+
+nav{
+     
+      float: right;
+      font-weight: 200;
+      font-size: 14px;
+}
+
+nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+}
+
+nav li{
+      position: relative;
+      display: inline-block;
+      padding: 30px 15px;
+      margin-left: 20px;
+}
+
+
+nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--wit);
+     
+}
+
+nav ul a:hover {
+      color: rgb(218, 218, 218);
+      opacity: 0.9;
+}
+
+
+nav a::before {
+      content: '';
+      top: 0;
+      display: block;
+      height: 5px;
+      width: 0%;
+      background: rgb(60, 60, 60);
+      position: absolute;
+}
+
+
+
+.content {
+padding-top: 50px;
+display: flex;
+justify-content: center;
+}
+
+.image {
+background: rgb(100, 47, 47);
+margin-left: 50px;
+width: 20%;
+background-repeat: no-repeat;
+cursor: pointer;
+}
